@@ -32,3 +32,13 @@ window.onscroll = function(){
 showMoreBtn.addEventListener("click", function(){
     this.classList.toggle("progress");
 })
+
+const openMBMenuBtn = document.querySelector(".open-menu");
+const mobileMenuEle = document.getElementById("mobile-menu");
+
+const openMobileMenu = function(){
+    console.log("Opened");
+    mobileMenuEle.style.display = "block";
+}
+
+openMBMenuBtn.addEventListener("click", openMobileMenu);
